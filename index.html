@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do Application</title>
+    <style>
+        .completed {
+            text-decoration: line-through;
+        }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+    <div class="flex flex-col justify-center items-center">
+        <h1 class="text-4xl my-6">ToDo List</h1>
+        <div class="my-4">
+            <input class="border-2 border-gray-400 rounded px-4 py-0.5" type="text" id="taskInput"
+                placeholder="Enter a new task" />
+            <button
+                class="bg-gray-400 py-0.5 rounded px-4 border-2 bg-gray-400 text-black font-bold hover:bg-gray-200 transition-all duration-100 delay-100 ease-in-out"
+                id="submitBtn">Submit</button>
+        </div>
+        <ul id="taskList"></ul>
+        <script src="app.js"></script>
+    </div>
+</body>
+
+</html>
